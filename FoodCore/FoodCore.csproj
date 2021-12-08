@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\Product\" />
+    <Folder Include="Contracts\Payment\" />
+    <Folder Include="Messages\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Business\" />
+    <Folder Include="Data\" />
+    <Folder Include="Data\DataManagement\" />
+    <Folder Include="Business\Services\" />
+    <Folder Include="Business\Steps\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Messages\" />
+    <None Remove="protobuf-net" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Enums\" />
+    <None Remove="Business\" />
+    <None Remove="Data\" />
+    <None Remove="Data\DataManagement\" />
+    <None Remove="CassandraCSharpDriver" />
+    <None Remove="Business\Services\" />
+    <None Remove="Business\Steps\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="protobuf-net" Version="3.0.101" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="CassandraCSharpDriver" Version="3.16.3" />
+  </ItemGroup>
+</Project>
